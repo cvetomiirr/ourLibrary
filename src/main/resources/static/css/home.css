@@ -1,0 +1,188 @@
+
+.section_details {
+    background: #e6abbc ;
+}
+
+
+/*Home*/
+
+.homeContainer {
+    padding-top:120px;
+}
+
+
+
+/*All Books Sections*/
+
+.booksSection{
+    padding: 0 30px;
+}
+
+.booksSection h1{
+    font-size: 25px;
+    font-style: italic;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.booksSection section{
+    margin-bottom: 25px;
+}
+
+.booksSection section h2,
+.booksSection section h4
+{
+    font-size:25px;
+    text-indent: 10px;
+
+}
+
+.booksSection section h4 {
+    font-style: italic;
+    font-size: 22px;
+}
+
+.booksSection section p{
+    padding: 10px 0;
+    text-indent: 15px;
+    height: 70px;
+    font-family: "Libre Baskerville", serif;
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+
+.card {
+    background:#e6abbc;
+}
+
+.card-title {
+    margin: 0;
+}
+
+.card-body {
+    padding:5px 20px;
+    height: 165px;
+}
+
+.img-fluid {
+    height: 463px;
+}
+
+a.allAboutBook.card.row {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+/* Suggest Books*/
+
+.suggestedBooks,
+.suggestedStories {
+    margin-top: -10px;
+}
+
+
+
+/* New Releases*/
+
+
+.newReleases {
+    margin-top: 10px;
+    border: 2px solid #999;
+}
+
+.newReleases .search{
+     float: right;
+     margin: 10px 0;
+     margin-bottom: 5px;
+     border: 1px solid #999;
+     border-radius: 10px;
+     height: 20px;
+     font-size:20px;
+     text-indent: 10px;
+}
+
+.newReleases section{
+    float: left;
+    width:100%;
+}
+
+
+/*Suggested Stories*/
+
+.suggestedStories {
+    padding: 0 30px;
+}
+
+
+
+
+/*Media*/
+
+@media only screen and (max-width: 1366px) {
+    .booksSection h1 {
+        margin-left: 25px;
+    }
+
+    .img-fluid {
+        height: 370px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .newReleases .search {
+            width: 160px;
+    }
+
+    .img-fluid {
+            height: 300px;
+    }
+}
+@media only screen and (max-width:1196px) {
+    .img-fluid {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .booksSection h1 {
+        margin-left: 0;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .newReleases {
+            margin-top: 0px;
+    }
+
+    .img-fluid {
+        height: 370px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .card-body {
+        padding: 5px 15px;
+        max-width: 100%;
+    }
+
+    .img-fluid {
+        margin-top:30px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .newReleasesByAuthor {
+        border-bottom: 2px solid #999;
+    }
+
+}
+
+}
+
+
+

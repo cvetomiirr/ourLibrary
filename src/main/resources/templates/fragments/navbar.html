@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>The Library</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.1.0/css/bootstrap.min.css}">
+
+    <link rel="stylesheet" th:href="@{/css/navbar.css}">
+    <link rel="stylesheet" th:href="@{/css/resetter.css}">
+
+</head>
+<body>
+    <div  th:fragment="navbar">
+        <nav class="navbar-expand-xl navbar-light navbar fixed-top">
+            <img class="navbar-brand logo" src="/images/Logo.png" alt="test picture">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample06"
+                    aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse " id="navbarsExample06" style="">
+                <ul class="navbar-nav mx-auto central-nav-text">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"> Home </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"> Create </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+<script th:src="@{/webjars/jquery/3.0.0/jquery.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/4.1.0/js/bootstrap.min.js}"></script>
+
+</body>
+</html>

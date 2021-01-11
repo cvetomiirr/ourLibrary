@@ -1,0 +1,61 @@
+/* Back Button */
+.div_button {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    background: #c46881;
+    width: 150px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    height: 30px;
+    text-indent: 20px;
+}
+
+a.a_button {
+    color: #fff ;
+    font-size: 20px;
+}
+
+
+
+
+/* Book */
+
+.homeContainer {
+    padding-top:95px;
+}
+
+.section_details {
+    background: #e6abbc ;
+    padding: 30px 10px;
+}
+
+
+a.allAboutBook.card.row {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.allAboutBook p.book-details {
+    height: auto;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.allAboutBook .card-title {
+    font-size: 30px;
+}
+
+.design_details {
+    padding-top: 15px;
+}
+
+.allAboutBook .design_titles {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-top: 15px;
+
+}
+
+.summary {
+    text-indent:30px;
+}

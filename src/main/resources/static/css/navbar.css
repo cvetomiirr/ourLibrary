@@ -1,0 +1,135 @@
+a.nav-link{
+    color: #999;
+    text-decoration: none;
+    font-size:20px;
+    background: none;
+}
+
+.navbar {
+    border-bottom:1px solid #999;
+}
+
+.navbar-collapse .navbar-nav>li>a:hover,
+.navbar-collapse .navbar-nav>li>a:focus {
+  color: #333;
+  background-color: transparent;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+nav {
+    background: #fff ;
+    width:100%;
+    z-index: 9999;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.icon-link {
+    margin-left: 10px;
+}
+
+.logo {
+    width: 65px;
+    height: 70px ;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.form-inline .form-control {
+    max-width: 100%;
+    height: 30px;
+    width: 380px;
+}
+
+.form-control, .search-bar {
+    float: left;
+    margin-top: 5px;
+    border: 2px solid #999;
+    border-radius: 10px;
+    font-size:18px;
+    text-indent: 10px;
+}
+
+.search-bar:placeholder {
+    color: #999;
+}
+
+.icons {
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+    margin-top: 12px;
+}
+
+.navbar-brand {
+    margin-right: 0px;
+
+}
+
+
+
+
+
+/* Media */
+
+@media only screen and (max-width: 1200px) {
+    .central-nav-text {
+        text-align: center;
+    }
+
+    .center-nav-input-form {
+        margin: 0 auto;
+    }
+}
+
+
+@media only screen and (max-width:576px) {
+    .form-control,
+    .form-inline .search-bar {
+        font-size: 14px;
+        width: 60%;
+    }
+    nav ul li {
+        margin:0;
+    }
+}
+
+@media only screen and (max-width:414px) {
+    .form-control,
+    .form-inline .search-bar {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .form-control,
+    .form-inline .search-bar {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+   .form-control,
+   .form-inline .search-bar {
+        text-indent: 5px;
+        font-size: 14px;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+   .form-control,
+   .form-inline .search-bar {
+        text-indent: 5px;
+        width: 90%;
+        font-size: 12px;
+    }
