@@ -3,7 +3,6 @@ package initializer;
 import domain.*;
 import repository.AuthorRepository;
 import repository.BasicRepository;
-import repository.StoryRepository;
 import util.DateUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -16,13 +15,11 @@ public class DatabaseInitializer implements ApplicationRunner {
 
     private final AuthorRepository authorRepository;
     private final BasicRepository bookRepository;
-    private final StoryRepository storyRepository;
 
     @Autowired
-    public DatabaseInitializer(AuthorRepository authorRepository, BasicRepository bookRepository, StoryRepository storyRepository) {
+    public DatabaseInitializer(AuthorRepository authorRepository, BasicRepository bookRepository) {
         this.authorRepository = authorRepository;
         this.bookRepository = bookRepository;
-        this.storyRepository = storyRepository;
     }
 
     @Override
@@ -298,26 +295,6 @@ public class DatabaseInitializer implements ApplicationRunner {
                 "\n" +
                 "Alex is a bad boy and he knows it. So when he makes a bet with his friends to lure Brittany into his life, he thinks nothing of it. But soon Alex realizes Brittany is a real person with real problems, and suddenly the bet he made in arrogance turns into something much more.");
         this.bookRepository.save(perfectChemistry);
-
-        Story myFirstLove = new Story("My first love", DateUtility.toInstant("2013-10-25"), Language.BULGARIAN, Genre.ROMANCE, "https://images-na.ssl-images-amazon.com/images/I/51vk-4Grp0L._SX322_BO1,204,203,200_.jpg",
-                2.9f, "", "");
-        this.storyRepository.save(myFirstLove);
-
-        Story monster = new Story("Monster", DateUtility.toInstant("2017-12-03"), Language.ENGLISH, Genre.HORROR, "https://10deb7fbfece20ff53da-95da5b03499e7e5b086c55c243f676a1.ssl.cf1.rackcdn.com/e03cdd76e869f63a3aa1ed88c9cc1ecd_xl.jpg",
-                4.8f, "", "");
-        this.storyRepository.save(monster);
-
-        Story bone = new Story("Bone", DateUtility.toInstant("2010-08-06"), Language.SPANISH, Genre.SCIENCE, "https://images.gr-assets.com/books/1500655149l/34879754.jpg",
-                2.8f, "", "");
-        this.storyRepository.save(bone);
-
-        Story dangerousGames = new Story("Dangerous games",DateUtility.toInstant("2016-04-02"), Language.GERMAN, Genre.FANTASY, "https://drlauratisdall.files.wordpress.com/2015/06/9780520284920.jpg",
-                4.2f, "", "");
-        this.storyRepository.save(dangerousGames);
-
-        Story iAmWatchingYou = new Story("I am watching you", DateUtility.toInstant("2009-09-09"), Language.ENGLISH, Genre.ROMANCE, "https://images.gr-assets.com/books/1500655149l/34879754.jpg",
-                3.8f, "", "");
-        this.storyRepository.save(iAmWatchingYou);
 
     }
 }

@@ -23,41 +23,6 @@ public abstract class Shelf implements Printable {
         return name;
     }
 
-    public abstract void addBooksToShelf(Book... books) throws BookNotAddedException;
-
-    public abstract void addBooksToShelf(List<Book> books);
-
-
-    public void removeBookFromShelf(Book... books) {
-        for (Book book : books) {
-            this.books.remove(book);
-        }
-    }
-
-    public void removeBooksFromShelf(List<Book> books) {
-        for (Book book : books) {
-            this.books.remove(book);
-        }
-    }
-
-    public void sortBooksAlphabeticaly() {
-        for (int i = 0; i < this.books.size(); i++) {
-            for (int j = i + 1; j < this.books.size(); j++) {
-                String titleOne = this.books.get(i).getTitle();
-                String titleTwo = this.books.get(j).getTitle();
-                if (titleOne.compareTo(titleTwo) > 0) {
-                    Book tempBook = books.get(j);
-                    books.set(j, books.get(i));
-                    books.set(i, tempBook);
-                }
-            }
-        }
-    }
-
-    public void increase() {
-        maxSize *= maxSize;
-    }
-
     @Override
     public void print() {
         System.out.println("The printing has started!");
@@ -68,9 +33,5 @@ public abstract class Shelf implements Printable {
         return "Shelf name: " + name
                 + '\n'
                 + books.toString();
-    }
-
-    public boolean contains(Book book) {
-        return this.books.contains(book);
     }
 }

@@ -69,18 +69,6 @@ public class Author {
         this.year = year;
     }
 
-    public Nationality getNationality() {
-        return nationality;
-    }
-
-    public void setNationality(Nationality nationality) {
-        this.nationality = nationality;
-    }
-
-    public void setGenres(Genre genres) {
-        this.genres = genres;
-    }
-
     public Collection<Book> getBooks() {
         return books;
     }
