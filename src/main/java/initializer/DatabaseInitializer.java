@@ -1,6 +1,9 @@
 package initializer;
 
 import domain.*;
+import domain.enums.Genre;
+import domain.enums.Language;
+import domain.enums.Nationality;
 import repository.AuthorRepository;
 import repository.BasicRepository;
 import util.DateUtility;

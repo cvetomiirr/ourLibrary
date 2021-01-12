@@ -1,5 +1,9 @@
 package domain;
 
+import domain.enums.Genre;
+import domain.enums.Language;
+import domain.interfaces.Printable;
+
 import javax.persistence.*;
 import java.time.Instant;
 import java.util.Objects;

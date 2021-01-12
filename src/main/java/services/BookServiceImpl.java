@@ -1,6 +1,7 @@
 package services;
 
 import domain.*;
+import domain.enums.Genre;
 import dto.BookDTO;
 import dto.BookDetailDTO;
 import repository.BookRepository;

@@ -1,5 +1,9 @@
 package domain;
 
+import domain.enums.Genre;
+import domain.enums.Language;
+import domain.interfaces.BlackAndWhite;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import java.time.Instant;
@@ -13,7 +17,7 @@ public class Novel extends Book implements BlackAndWhite {
     private String summary;
     private boolean series;
 
-    public Novel(String title, Instant year, Language language, Genre genre, String image, float rating, Author author, int pages, boolean isBlackAndWhite,boolean series, String summary) {
+    public Novel(String title, Instant year, Language language, Genre genre, String image, float rating, Author author, int pages, boolean isBlackAndWhite, boolean series, String summary) {
         super(title, year, language, genre, image, rating, author, pages);
         this.isBlackAndWhite = isBlackAndWhite;
         this.series = series;

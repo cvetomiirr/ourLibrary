@@ -3,14 +3,11 @@
     background: #87CEFA ;
 }
 
-
 /*Home*/
 
 .homeContainer {
     padding-top:120px;
 }
-
-
 
 /*All Books Sections*/
 
@@ -75,50 +72,11 @@ a.allAboutBook.card.row {
     text-decoration: none;
 }
 
-
-
-/* Suggest Books*/
-
-.suggestedBooks,
-.suggestedStories {
-    margin-top: -10px;
-}
-
-
-
 /* New Releases*/
-
-
-.newReleases {
-    margin-top: 10px;
-    border: 2px solid #999;
-}
-
-.newReleases .search{
-     float: right;
-     margin: 10px 0;
-     margin-bottom: 5px;
-     border: 1px solid #999;
-     border-radius: 10px;
-     height: 20px;
-     font-size:20px;
-     text-indent: 10px;
-}
-
 .newReleases section{
     float: left;
     width:100%;
 }
-
-
-/*Suggested Stories*/
-
-.suggestedStories {
-    padding: 0 30px;
-}
-
-
-
 
 /*Media*/
 

@@ -1,7 +1,7 @@
 package dto;
 
-import domain.Genre;
-import domain.Language;
+import domain.enums.Genre;
+import domain.enums.Language;
 
 import java.time.Instant;
 

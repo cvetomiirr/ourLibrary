@@ -1,5 +1,8 @@
 package domain;
 
+import domain.enums.Genre;
+import domain.enums.Language;
+
 import javax.persistence.*;
 import java.time.Instant;
 
