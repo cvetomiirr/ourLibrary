@@ -1,6 +1,6 @@
 
 .section_details {
-    background: #e6abbc ;
+    background: #87CEFA ;
 }
 
 
@@ -52,7 +52,8 @@
 }
 
 .card {
-    background:#e6abbc;
+    background:#87CEFA;
+    border-radius: 2.25rem;
 }
 
 .card-title {
@@ -181,8 +182,3 @@ a.allAboutBook.card.row {
     }
 
 }
-
-}
-
-
-

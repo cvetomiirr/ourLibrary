@@ -10,5 +10,4 @@ import java.util.List;
 public interface BasicBookRepository<T extends Book> extends BasicRepository<T> {
 
     List<Book> findAllByAuthor(Author author);
-    List<Book> findAllByPages(int pages);
 }

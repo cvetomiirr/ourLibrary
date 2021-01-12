@@ -10,5 +10,4 @@ public interface NovelRepository extends BasicBookRepository<Novel> {
 
     List<Novel> findAllBySeries(boolean series);
     List<Novel> findBySummary(String summary);
-    //List<Novel> findAllByisBlackAndWhite(boolean isBlackAndWhite);
 }

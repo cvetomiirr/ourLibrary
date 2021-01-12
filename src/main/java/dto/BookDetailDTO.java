@@ -8,18 +8,13 @@ import java.time.Instant;
 
 public class BookDetailDTO {
     private String title;
-    private String authorFirstName;
-    private String authorLastName;
     private int pages;
     private long id;
     private Instant year;
     private Language language;
     private Genre genre;
     private String image;
-    private float rating;
     private String summary;
-    private boolean series;
-    private int recommendAge;
 
 
     public String getTitle() {
@@ -28,26 +23,6 @@ public class BookDetailDTO {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getAuthorFirstName() {
-        return authorFirstName;
-    }
-
-    public void setAuthorFirstName(String authorFirstName) {
-        this.authorFirstName = authorFirstName;
-    }
-
-    public String getAuthorLastName() {
-        return authorLastName;
-    }
-
-    public void setAuthorLastName(String authorLastName) {
-        this.authorLastName = authorLastName;
-    }
-
-    public int getPages() {
-        return pages;
     }
 
     public void setPages(int pages) {
@@ -94,35 +69,11 @@ public class BookDetailDTO {
         this.image = image;
     }
 
-    public float getRating() {
-        return rating;
-    }
-
-    public void setRating(float rating) {
-        this.rating = rating;
-    }
-
     public String getSummary() {
         return summary;
     }
 
     public void setSummary(String summary) {
         this.summary = summary;
-    }
-
-    public boolean isSeries() {
-        return series;
-    }
-
-    public void setSeries(boolean series) {
-        this.series = series;
-    }
-
-    public int getRecommendAge() {
-        return recommendAge;
-    }
-
-    public void setRecommendAge(int recommendAge) {
-        this.recommendAge = recommendAge;
     }
 }

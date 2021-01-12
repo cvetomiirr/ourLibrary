@@ -59,7 +59,7 @@ nav ul li {
     text-indent: 10px;
 }
 
-.search-bar:placeholder {
+.search-bar::placeholder {
     color: #999;
 }
 
@@ -127,9 +127,10 @@ nav ul li {
 }
 
 @media only screen and (max-width: 320px) {
-   .form-control,
-   .form-inline .search-bar {
+    .form-control,
+    .form-inline .search-bar {
         text-indent: 5px;
         width: 90%;
         font-size: 12px;
     }
+}

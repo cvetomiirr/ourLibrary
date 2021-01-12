@@ -35,9 +35,6 @@ public class DatabaseInitializer implements ApplicationRunner {
         Author roxaneGay = new Author("Roxane", "Gay", "", DateUtility.toInstant("1974-10-15"), Nationality.AMERICAN, Genre.MEMORY);
         this.authorRepository.save(roxaneGay);
 
-        Author alanMilne = new Author("Alan","Milne","A. A. Milne",DateUtility.toInstant("1882-01-18"),Nationality.ENGLISHMAN, Genre.CHILDBOOKS);
-        this.authorRepository.save(alanMilne);
-
         Author heleneDunbar = new Author("Helene", "Dunbar", "", DateUtility.toInstant("1972-10-23"), Nationality.AMERICAN, Genre.YOUNG_ADULT);
         this.authorRepository.save(heleneDunbar);
 
@@ -301,12 +298,6 @@ public class DatabaseInitializer implements ApplicationRunner {
                 "\n" +
                 "Alex is a bad boy and he knows it. So when he makes a bet with his friends to lure Brittany into his life, he thinks nothing of it. But soon Alex realizes Brittany is a real person with real problems, and suddenly the bet he made in arrogance turns into something much more.");
         this.bookRepository.save(perfectChemistry);
-
-
-       User user1 = new User("mariya_ivanova", "Mariya", "Ivanova", "password", "mariya_ivanova@abv.bg", Role.WRITER);
-       User user2 = new User("elena96", "Elena", "Gachovska", "password", "elena.g@abv.bg", Role.ADMIN);
-       User user3 = new User("lubomir92", "Lubomir", "Petrov", "password", "lubomir@abv.bg", Role.WRITER);
-       User user4 = new User("kolev12", "Ivaylo", "Kolev", "password", "ivaylo.kolev@abv.bg", Role.WRITER);
 
         Story myFirstLove = new Story("My first love", DateUtility.toInstant("2013-10-25"), Language.BULGARIAN, Genre.ROMANCE, "https://images-na.ssl-images-amazon.com/images/I/51vk-4Grp0L._SX322_BO1,204,203,200_.jpg",
                 2.9f, "", "");

@@ -4,7 +4,6 @@ public class StoryDTO {
 
     private long id;
     private String title;
-    private String userUserName;
     private String summary;
     private String image;
 
@@ -23,14 +22,6 @@ public class StoryDTO {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getUserUserName() {
-        return userUserName;
-    }
-
-    public void setUserUserName(String userUserName) {
-        this.userUserName = userUserName;
     }
 
     public String getSummary() {

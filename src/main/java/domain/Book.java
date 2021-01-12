@@ -27,14 +27,6 @@ public abstract class Book extends Read implements Comparable {
         return author;
     }
 
-    public void setAuthor(Author author) {
-        this.author = author;
-    }
-
-    public int getPages() {
-        return pages;
-    }
-
     public void setPages(int pages) {
         this.pages = pages;
     }

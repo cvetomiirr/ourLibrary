@@ -2,7 +2,7 @@
 .div_button {
     margin-bottom: 30px;
     margin-left: 20px;
-    background: #c46881;
+    background: #2E93C5;
     width: 150px;
     border: 1px solid #999;
     border-radius: 10px;
@@ -42,6 +42,5 @@ a.a_button {
 }
 
 .section_details {
-    background: #e6abbc ;
     padding: 30px 10px;
 }

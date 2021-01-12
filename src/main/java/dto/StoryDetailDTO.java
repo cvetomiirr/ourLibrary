@@ -12,8 +12,6 @@ public class StoryDetailDTO {
     private Language language;
     private Genre genre;
     private String image;
-    private float rating;
-    private String userUserName;
     private String text;
 
     public String getTitle() {
@@ -62,22 +60,6 @@ public class StoryDetailDTO {
 
     public void setImage(String image) {
         this.image = image;
-    }
-
-    public float getRating() {
-        return rating;
-    }
-
-    public void setRating(float rating) {
-        this.rating = rating;
-    }
-
-    public String getUserUserName() {
-        return userUserName;
-    }
-
-    public void setUserUserName(String userUserName) {
-        this.userUserName = userUserName;
     }
 
     public String getText() {

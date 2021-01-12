@@ -13,8 +13,5 @@ import java.util.List;
 public interface BasicRepository<T extends Read> extends JpaRepository<T, Long> {
 
     Book findByTitle(String title);
-    List<Book> findAllByYear(Instant year);
-    List<Book> findAllByLanguage(String language);
-    List<Book> findAllByGenre (Genre genre);
 
 }

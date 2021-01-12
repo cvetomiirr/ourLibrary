@@ -90,10 +90,6 @@ public abstract class Read implements Printable {
         return rating;
     }
 
-    public void setRating(float rating) {
-        this.rating = rating;
-    }
-
     @Override
     public String toString() {
         return "  title='" + title + '\'' +

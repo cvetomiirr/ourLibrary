@@ -4,8 +4,6 @@ public class BookDTO {
 
     private long id;
     private String title;
-    private String authorFirstName;
-    private String authorLastName;
     private String summary;
     private String image;
 
@@ -23,22 +21,6 @@ public class BookDTO {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getAuthorFirstName() {
-        return authorFirstName;
-    }
-
-    public void setAuthorFirstName(String authorFirstName) {
-        this.authorFirstName = authorFirstName;
-    }
-
-    public String getAuthorLastName() {
-        return authorLastName;
-    }
-
-    public void setAuthorLastName(String authorLastName) {
-        this.authorLastName = authorLastName;
     }
 
     public String getSummary() {

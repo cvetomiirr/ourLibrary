@@ -38,15 +38,16 @@ a:hover {
 /* Media */
 
 @media only screen and (max-width: 1200px) {
-    .footer ul li{
+    .footer ul li {
         display: inline;
-        padding:0 25px;
+        padding: 0 25px;
+    }
 }
 
-@media only screen and (max-width:576px) {
-    .footer ul li{
-        display: block;
-        padding: 0;
-        margin-bottom: 5px;
-    }
+@media only screen and (max-width: 576px) {
+        .footer ul li {
+            display: block;
+            padding: 0;
+            margin-bottom: 5px;
+        }
 }

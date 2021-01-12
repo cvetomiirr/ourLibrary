@@ -10,7 +10,6 @@
     <link rel="stylesheet" th:href="@{/css/home.css}">
     <link rel="stylesheet" th:href="@{/css/navbar.css}">
     <link rel="stylesheet" th:href="@{/css/footer.css}">
-    <link rel="stylesheet" th:href="@{/css/resetter.css}">
 
 </head>
 <body>
@@ -40,7 +39,6 @@
                 <div class="row">
                     <div class="newReleasesByAuthor booksSection col-xl-6 col-lg-6 col-md-6">
                         <h1>New releases by author</h1>
-                        <input class="search" type="text" placeholder="Search Author">
                         <section th:each="book : ${latestBooks}">
                            <a th:href="'book/' + ${book.id}" class="allAboutBook card row ">
                                <div class="images card-img-top col-xl-12 col-lg-12 col-md-10">
@@ -57,7 +55,6 @@
 
                     <div class="newReleasesByGenre booksSection col-xl-6 col-lg-6 col-md-6">
                         <h1>New releases by genre</h1>
-                        <input class="search" type="text" placeholder="Search Genre">
                         <section th:each="book : ${findLatestBookByGenre}">
                             <a th:href="'book/' + ${book.id}" class="allAboutBook card row">
                                 <div class="images card-img-top col-xl-12 col-lg-12 col-md-10">

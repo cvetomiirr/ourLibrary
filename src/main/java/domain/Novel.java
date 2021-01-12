@@ -32,18 +32,6 @@ public class Novel extends Book implements BlackAndWhite {
         this.summary = summary;
     }
 
-    public boolean isSeries() {
-        return series;
-    }
-
-    public void setSeries(boolean series) {
-        this.series = series;
-    }
-
-    public void setBlackAndWhite(boolean blackAndWhite) {
-        isBlackAndWhite = blackAndWhite;
-    }
-
     @Override
     public boolean isBlackAndWhite() {
         return isBlackAndWhite;
