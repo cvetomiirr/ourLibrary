@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class SaveBookController {
 
-
     @GetMapping("/saveBook")
     public String saveBook(Model model){
         model.addAttribute("book", new BookDTO());
@@ -21,5 +20,6 @@ public class SaveBookController {
     public String saveBookSubmit(@ModelAttribute BookDTO book){
         return "save/result/result";
     }
+
 }
 

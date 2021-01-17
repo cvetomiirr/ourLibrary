@@ -10,7 +10,6 @@ import java.util.Collection;
 @Entity
 @Table(name = "author")
 public class Author {
-
     private String firstName;
     private String lastName;
     private String alias;
@@ -27,9 +26,6 @@ public class Author {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    public Author() {
-    }
-
     public Author(String firstName, String lastName, String alias, Instant year, Nationality nationality, Genre genres) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -39,9 +35,16 @@ public class Author {
         this.genres = genres;
     }
 
-    public Author(String firstName, String lastName, String alias, Instant year, Nationality nationality, Genre genres, Collection<Book> books) {
-        this(firstName, lastName, alias, year, nationality, genres);
-        this.books = books;
+    public Author() {
+
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getFirstName() {
@@ -60,17 +63,27 @@ public class Author {
         this.lastName = lastName;
     }
 
+    public String getAlias() { return alias; }
+
     public void setAlias(String alias) {
         this.alias = alias;
     }
 
-    public Instant getYear() {
-        return year;
-    }
+    public Instant getYear() { return year; }
 
     public void setYear(Instant year) {
         this.year = year;
     }
+
+    public Nationality getNationality() { return nationality; }
+
+    public void setNationality(Nationality nationality) { this.nationality = nationality; }
+
+    public Genre getGenres() {
+        return genres;
+    }
+
+    public void setGenres(Genre genres) { this.genres = genres; }
 
     public Collection<Book> getBooks() {
         return books;
@@ -80,23 +93,6 @@ public class Author {
         this.books = books;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public String getAlias() {
-        return alias;
-    }
-
-    public Genre getGenres() {
-        return genres;
-    }
-
-     
 
     public Book getLatestBook() {
         return this.books
@@ -117,15 +113,6 @@ public class Author {
                 + "ID:" + this.id;
     }
 
-    public String getShortInfo() {
-        return "First name: " + this.firstName
-                + " Last Name:" + this.lastName;
-    }
-
-    @Override
-    public boolean equals(Object author) {
-        return this.id == ((Author) author).getId();
-    }
 
 }
 

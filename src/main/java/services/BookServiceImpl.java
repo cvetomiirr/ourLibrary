@@ -5,7 +5,6 @@ import domain.enums.Genre;
 import dto.BookDTO;
 import dto.BookDetailDTO;
 import repository.BookRepository;
-import repository.NovelRepository;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
@@ -17,12 +16,10 @@ import java.util.stream.Collectors;
 
 @Service
 public class BookServiceImpl implements BookService  {
-    private final NovelRepository novelRepository;
-    private final BookRepository bookRepository;
-    private final ModelMapper modelMapper;
+    private BookRepository bookRepository;
+    private ModelMapper modelMapper;
 
-    public BookServiceImpl(NovelRepository novelRepository, BookRepository bookRepository, ModelMapper modelMapper) {
-        this.novelRepository = novelRepository;
+    public BookServiceImpl( BookRepository bookRepository, ModelMapper modelMapper) {
         this.bookRepository = bookRepository;
         this.modelMapper = modelMapper;
     }

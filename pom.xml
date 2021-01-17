@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.kaufland</groupId>
-	<artifactId>myLibrary</artifactId>
+	<artifactId>ourLibrary</artifactId>
 	<version>1.0.1-SNAPSHOT</version>
 	<packaging>${packaging.type}</packaging>
 
-	<name>myLibrary</name>
+	<name>ourLibrary</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -43,6 +43,11 @@
 			<groupId>org.webjars</groupId>
 			<artifactId>bootstrap</artifactId>
 			<version>4.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
 		</dependency>
 
 		<dependency>

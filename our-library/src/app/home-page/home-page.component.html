@@ -1,0 +1,56 @@
+<div class="homeContainer container-fluid">
+  <div class="row">
+    <div class="suggestedBooks booksSection col-xl-3 col-lg-3 d-none d-lg-block d-xl-block">
+      <h1>Suggested books</h1>
+      <section *ngFor="let suggestedBook of suggestedBooks">
+        <a href="'book/' + {{'book.id'}}" class="allAboutBook card row" >
+          <div class="card-img-top col-xl-12 col-lg-12 ">
+            <img class="img-fluid" src="{{'book.image'}}" alt="First book">
+          </div>
+          <div class=" card-body col-xl-12 col-lg-12">
+            <h2 class="card-title" > {{'book.title'}} </h2>
+            <!--<h4 class="card-title" > by {{'book.authorFirstName'}} {{'book.authorLastName'}} </h4>-->
+            <p  class="card-text"> {{'book.summary'}} </p>
+          </div>
+        </a>
+      </section>
+    </div>
+
+    <div class="newReleases booksSection col-xl-6 col-lg-6 col-md-12">
+      <div class="row">
+        <div class="newReleasesByAuthor booksSection col-xl-6 col-lg-6 col-md-6">
+          <h1>New releases by author</h1>
+          <section *ngFor="let latestBook of latestBooks" >
+            <a href="'book/' + {{'book.id'}}" class="allAboutBook card row ">
+              <div class="images card-img-top col-xl-12 col-lg-12 col-md-10">
+                <img class="img-fluid" src="{{'book.image'}}" alt="First recommendation book">
+              </div>
+              <div class="card-body col-xl-12 col-lg-12 col-md-10">
+                <h2 class="card-title" > {{'book.title'}} </h2>
+                <!-- <h4 class="card-title"> by {{'book.authorFirstName'}} {{'book.authorLastName'}} </h4>-->
+                <p  class="card-text"> {{'book.summary'}} </p>
+              </div>
+            </a>
+          </section>
+        </div>
+
+        <div class="newReleasesByGenre booksSection col-xl-6 col-lg-6 col-md-6">
+          <h1>New releases by genre</h1>
+          <section *ngFor="let book of findLatestBookByGenre" >
+            <a href="'book/' + {{'book.id'}}" class="allAboutBook card row">
+              <div class="images card-img-top col-xl-12 col-lg-12 col-md-10">
+                <img class="img-fluid" src="{{'book.image'}}" alt="First recommendation book">
+              </div>
+              <div class="card-body col-xl-12 col-lg-12 col-md-10">
+                <h2 class="card-title"> {{'book.title'}} </h2>
+                <!--<h4 class="card-title"> by {{'book.authorFirstName'}} {{'book.authorLastName'}} </h4>-->
+                <p  class="card-text"> {{'book.summary'}} </p>
+              </div>
+            </a>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
